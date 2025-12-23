@@ -32,41 +32,57 @@ class TribeSeeder extends Seeder
                  [
                     'name' => 'Chaga',
                     'common_names' => ['Chagga', 'Wachagga'],
-                    'origin_region' => 'Mkoa wa Kilimanjaro',
-                    'famous_location' => 'Moshi, slopes of Mount Kilimanjaro',
+                    'origin_region' => 'Mkoa wa Kilimanjaro wilaya za: Moshi Vijijini, Moshi Mjini, Hai, Rombo, na Mwanga',
+                    'famous_location' => ['Mlima Kilimanjaro', 'Moshi Town', 'Materuni Waterfalls', 'Chemka (Kikuletwa) Hot Springs', 'Kahawa plantations za Wachaga', 'Makao ya Machifu (Mangi)', 'Makumbusho ya Wachaga', 'Mapango ya Chagga', 'Maporomoko ya Maji ya Ndoro & Marangu', 'Kijiji cha Uru & Old Moshi', 'Msitu wa Rau',],
                     'country' => 'Tanzania',
-                    'summary' => 'Wachaga ni jamii ya wakulima wanaoishi katika miteremko ya Mlima Kilimanjaro.',
-                    'description' => 'Wanajulikana kwa kilimo cha kahawa na ndizi kwa mfumo wa matuta, pamoja na mila tajiri za chakula.',
+                    'summary' => 'Wachaga ni jamii ya wakulima wanaoishi katika miteremko ya Mlima Kilimanjaro. Wanajulikana kwa kilimo cha kahawa na ndizi kwa mfumo wa matuta, pamoja na mila tajiri za chakula.',
+                    'description' => '',
                     'origins_and_history' => [
-                        'summary' => 'Makazi katika miteremko ya Mlima Kilimanjaro',
-                        'description' => 'Wachaga waliunda machifu huru yaliyopatikana katika ardhi yenye rutuba ya volkano.',
+                        'title' => 'Kuhusu wachagga na mila na tamaduni zao',
+                        'summary' => 'Kabila la Wachaga (au Wachagga) ni miongoni mwa makabila yanayojulikana sana Tanzania, si tu kwa wingi wao bali pia kwa bidii ya kazi, elimu, kilimo cha kahawa, na historia yao tajiri. Wachaga wanaishi katika moja ya maeneo yenye mandhari nzuri zaidi barani Afrika — Mlima Kilimanjaro.',
+                        'subtitle' => 'Zifuatazo ni mila na desturi za wachgga',
                         'items' => [
                             [
-                                'name' => 'Uhamaji na makazi',
-                                'description' => 'Walivutiwa na ardhi yenye rutuba inayofaa kwa kilimo cha ndizi na kahawa.',
+                                'name' => 'Mila na Desturi za wachagga',
+                                'description' => 'Mila na desturi ni sehemu muhimu ya kabila lolote nchini Tanzania. Sawasawa na kabila la wachagga lenye mila na tamaduni zao amabzo husaidia kuleta mifumo na utaratibu kwenye kabila.',
+                                'subtitle' => 'Wachagga wana mila na tamaduni zifuatazo',
+                                'customs' => ['akili ya biashara na elimu', 'Utamaduni wa kilimo cha kudumu, hasa kahawa na ndizi', 'Walikuwa na mfumo wa umwagiliaji wa jadi (mifongo) uliotumia maji ya milimani – teknolojia ya hali ya juu kwa wakati wao', 'Muziki na ngoma za asili kama mtingo na mbore hutumika kwenye sherehe na matambiko'],
+                                'beliefs' => ['Heshima kwa wazee na ukoo', 'Umiliki wa ardhi wa kifamilia', 'Mila za ndoa zinazohusisha mahari (hasa ng’ombe au pesa)', 'bada za jadi zilizohusiana na mizimu ya mababu (kabla ya ujio wa dini)'],
                                 'media_keys' => [],
                             ],
                         ],
                     ],
                     'food_and_cuisine' => [
-                        'summary' => 'Vyakula vinavyotokana na ndizi',
-                        'description' => 'Ndizi ni kiini cha maisha ya kila siku na sherehe.',
+                        'title' => 'Vyakula na vinywaji vya Kihaya',
+                        'summary' => 'Vyakula vya Kichagga vinategea sana ndizi',
+                        'subtitle' => 'Vifuatavyo ni vyakula ambavyo wachagga wanapendelea kula.',
                         'items' => [
                             [
                                 'name' => 'Mtori',
                                 'description' => 'Supu nzito ya ndizi na nyama ya ng’ombe inayoliwa asubuhi kwa jadi.',
-                                'media_keys' => ['mtori_img'],
+                                'media_keys' => [],
                             ],
                             [
-                                'name' => 'Vyakula vya ndizi',
-                                'description' => 'Ndizi ni sehemu muhimu ya lishe na taratibu za kitamaduni.',
+                                'name' => 'Vyakula vya ndizi (Matoke)',
+                                'description' => 'Ndizi ni sehemu muhimu ya lishe na taratibu za kitamaduni ambazo hupikwa kwa njia tofauti kama ndizi mchemsho, ndizi za mchuzi na nyama, ndizi za kukaangwa, etc.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Mbege',
+                                'description' => 'Hii ni pombe maarufu ya kienyeji iliyotengenezwa kwa ndizi na ulezi (alama kubwa ya Wachaga)',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Chai ya tangawizi au majani ya asili',
+                                'description' => 'Chai ya asili ambayo wachagga wengi hunywa asubuhi',
                                 'media_keys' => [],
                             ],
                         ],
                     ],
                     'music_and_dance' => [
-                        'summary' => 'Ngoma za sherehe',
-                        'description' => 'Muziki huambatana na taratibu za maisha na matukio ya kijamii.',
+                        'title' => 'Ngoma na Michezo za wachagga',
+                        'summary' => 'Ngoma na muziki huambatana na taratibu za maisha na matukio ya kijamii ndani ya kabila la wachagga.',
+                        'subtitle' => 'Zifuatazo ni ngoma na michezo za kichagga.',
                         'items' => [
                             [
                                 'name' => 'Mringaringa',
@@ -76,14 +92,20 @@ class TribeSeeder extends Seeder
                         ],
                     ],
                     'dress_and_adornment' => [
-                        'summary' => 'Mavazi na mapambo ya jadi',
-                        'description' => 'Mavazi huonyesha hadhi na tukio husika.',
+                        'title' => 'Mavazi ya asili ya wachagga',
+                        'summary' => 'Mavazi ya asili ya Wachagga yalihusiana sana na mazingira ya Mlima Kilimanjaro na maisha yao ya kilimo. Mavazi hayo yalionyesha hadhi na tukio husika.',
+                        'subtitle' => 'Yafuatayo ni mavazi ya kiasili ya kabila la wachagga',
                         'items' => [
                             [
-                                'name' => 'Mapambo ya shanga',
-                                'description' => 'Huvaa wakati wa sherehe na matambiko.',
+                                'name' => 'Ngozi za wanyama',
+                                'description' => 'Wanaume walivaa ngozi za wanyama (hasa ngozi ya mbuzi au ng’ombe) zilizofungwa kiunoni au mabegani. Wanawake walivaa nguo zilizofungwa kiunoni na kifuani, zilizotengenezwa kwa ngozi.',
                                 'media_keys' => [],
                             ],
+                            [
+                                'name' => 'vitambaa vya asili',
+                                'description' => 'Wanawake walifunga vitambaa kiunoni na kifuani, zilizotengenezwa kwa vitambaa vya asili, mara nyingi zikiwa na mapambo ya rangi au shanga. Wakati mwingine wanaume walivaa kanzu fupi za asili katika sherehe maalum.',
+                                'media_keys' => [],
+                            ]
                         ],
                     ],
                     'created_by' => $firstUserUuid,
@@ -93,41 +115,62 @@ class TribeSeeder extends Seeder
                 [
                     'name' => 'Haya',
                     'common_names' => ['Wahaya', 'Bahaya'],
-                    'origin_region' => 'Mkoa wa Kagera',
-                    'famous_location' => 'Bukoba na mwambao wa Ziwa Victoria',
+                    'origin_region' => 'Mkoa wa Kagera, Wilaya Bukoba, Muleba, Karagwe, Missenyi, na Biharamulo.',
+                    'famous_location' => ['Bukoba Town & Lake Victoria', 'Kagera Sugar Plantations & Agricultural Tours', 'Maporomoko ya Maji ya Kikagati', 'Makumbusho ya Mkoa wa Kagera', 'Kasubi Hill', 'Mabaki ya Miji ya Kale ya Haya', 'Kanisa la Kale la Rubya Mission', 'Visiwa vya Rubondo & Musila', 'Mapango ya Kihistoria Karagwe', 'Chemchemi za Asili za Bugabo', 'Milima ya Kamachumu Highlands'],
                     'country' => 'Tanzania',
-                    'summary' => 'Wahaya ni jamii ya wakulima na wafugaji wanaoishi kaskazini-magharibi mwa Tanzania.',
-                    'description' => 'Wanajulikana kwa kilimo cha ndizi, ufugaji wa ng’ombe, na historia ndefu ya falme za jadi.',
+                    'summary' => 'Wahaya ni mojawapo ya makabila ya kale, yaliyochangia kwa kiasi kikubwa historia, elimu, na maendeleo ya taifa. Katika blogpost hii, tutazungumzia kwa kina kuhusu kabila hili la Wahaya: asili yao, mila, tamaduni, chakula, mavazi, na mambo mengine muhimu.',
+                    'description' => '',
                     'origins_and_history' => [
-                        'summary' => 'Makazi ya muda mrefu katika eneo la Ziwa Victoria',
-                        'description' => 'Wahaya waliunda falme imara za jadi zilizoongozwa na machifu (abakama) na kuwa miongoni mwa jamii za mwanzo kuendeleza teknolojia ya chuma.',
+                        'title' => 'Kuhusu wahaya na mila na tamaduni zao',
+                        'summary' => 'Wahaya ni kabila la Kibantu linalopatikana katika mkoa wa Kagera, kaskazini-magharibi mwa Tanzania, kwenye mwambao wa Ziwa Victoria. Wilaya wanazopatikana kwa wingi ni Bukoba, Muleba, Karagwe, Missenyi, na Biharamulo. Ni moja ya jamii za kale zenye historia ndefu ya falme za kifalme (kama Bunyoro na Karagwe) na ushawishi mkubwa wa kiutamaduni.Wahaya wanajulikana sana kwa kilimo cha ndizi, mila za awali za uundaji wa chuma, na mifumo tata ya kikoo inayopatikana hasa eneo la Bukoba kandokando ya Ziwa Victoria.',
+                        'subtitle' => 'Zifuatazo ni mila na desturi za wahaya',
                         'items' => [
                             [
-                                'name' => 'Uhamaji na falme za jadi',
-                                'description' => 'Walijikita katika eneo la Kagera na kuunda falme zilizoongozwa na machifu wenye mamlaka ya kijamii na kiutamaduni.',
+                                'name' => 'Mila na Desturi za wahaya',
+                                'description' => 'Mila na desturi ni sehemu muhimu ya kabila lolote nchini Tanzania. Sawasawa na kabila la wahaya lenye mila na tamaduni zao amabzo husaidia kuleta mifumo na utaratibu kwenye kabila.',
+                                'subtitle' => 'Wahaya wana mila na tamaduni zifuatazo',
+                                'customs' => ['Wahaya wanatambuliwa kwa kuheshimu elimu, jambo lililowafanya kuwa miongoni mwa jamii za kwanza nchini kupokea elimu ya kisasa.', 'Ngoma za asili kama Ekizino (ngoma ya harusi) na Ekitaguriro (ya sherehe na mapokezi) zinaendelea kuenziwa hadi leo.', 'Wahaya ni watu wa nidhamu, heshima kwa wakubwa, na wanajulikana kwa lugha yao ya upole na ustaarabu wa hali ya juu.'],
+                                'beliefs' => ['wahaya wana mafunzo maalum kwa vijana (jando) kabla ya ndoa.', 'Ndoa za kimila zikihusisha mahari ya ng’ombe, na harusi kuwa sherehe kubwa za kijamii.', 'Imani kali kuhusu mizimu na matambiko ya familia yaliyofanywa kwa ajili ya mababu na kulinda ukoo.'],
                                 'media_keys' => [],
                             ],
                         ],
                     ],
                     'food_and_cuisine' => [
-                        'summary' => 'Vyakula vinavyotokana na ndizi na maziwa',
-                        'description' => 'Ndizi ni chakula kikuu na hutumika pia kutengeneza vinywaji vya jadi.',
+                        'title' => 'Vyakula na vinywaji vya Kihaya',
+                        'summary' => 'Wahaya wana vyakula mbalimbali kama ndizi, samaki kutoka ziwa victoria, maziwa, nk',
+                        'subtitle' => 'Vifuatavyo ni vyakula ambavyo wahaya wanapendelea kula.',
                         'items' => [
                             [
-                                'name' => 'Matoke',
-                                'description' => 'Ndizi zilizopikwa na kuliwa kama chakula kikuu cha kila siku.',
+                                'name' => 'Ndizi za kupika (ndizi mbichi)',
+                                'description' => 'Hiki ni chakula kikuu cha Wahaya - hutengenezwa kwa namna mbalimbali: kukaangwa, kuchemshwa, au kuchanganywa na nyama',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Sanene',
+                                'description' => 'wadudu hawa jamii ya panzi au nzige hukamatwa, kuondolewa mbawa, miguu, papasi na mikia yake kisha kukaangwa kwa mafuta au hata bila mafuta. Katika hatua hii huwa tayari kwa kuliwa na chakula chochote ambacho huwa kimeandaliwa.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Samaki',
+                                'description' => 'Samaki ni sehemu muhimu katika lishe ya wahaya, huwa wanakula sana samaki kutoka ziwa victoria kama sanagara na sato.',
                                 'media_keys' => [],
                             ],
                             [
                                 'name' => 'Rubisi',
-                                'description' => 'Kinywaji cha jadi kinachotengenezwa kutokana na ndizi kilicho muhimu katika sherehe.',
+                                'description' => 'Hii ni pombe ya kienyeji inayotengenezwa kwa ndizi na mtama au ulezi. Ni maarufu sana katika sherehe za kijadi na hata mikusanyiko ya kifamilia.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Chai ya maziwa',
+                                'description' => 'Chai ya maziwa ni maarufu sana kwa wahaya kutokana na kilimo cha chai na ufugaji wa ng’ombe wa maziwa.',
                                 'media_keys' => [],
                             ],
                         ],
                     ],
                     'music_and_dance' => [
-                        'summary' => 'Ngoma na nyimbo za kifalme na kijamii',
-                        'description' => 'Ngoma na muziki hutumika katika sherehe, ibada za kifalme, na matukio ya kijamii.',
+                        'title' => 'Ngoma na Michezo za Wahaya',
+                        'summary' => 'Ngoma na muziki hutumika katika sherehe, ibada za kifalme, na matukio ya kijamii.',
+                        'subtitle' => 'Zifuatazo ni ngoma na michezo za kihaya.',
                         'items' => [
                             [
                                 'name' => 'Ekitaguriro',
@@ -137,12 +180,28 @@ class TribeSeeder extends Seeder
                         ],
                     ],
                     'dress_and_adornment' => [
-                        'summary' => 'Mavazi ya jadi na mapambo',
-                        'description' => 'Mavazi ya jadi yalitengenezwa kwa magome ya miti (barkcloth) na mapambo ya asili.',
+                        'title' => 'Mavazi ya asili ya wahaya',
+                        'summary' => 'Mavazi ya asili ya Wahaya kwa kawaida yalikuwa rahisi lakini yenye maana ya kitamaduni na kijamii.',
+                        'subtitle' => 'Yafuatayo ni mavazi ya kiasili ya kabila la wahaya',
                         'items' => [
                             [
                                 'name' => 'Mavazi ya magome',
-                                'description' => 'Hutumika katika nyakati za zamani na sherehe za kitamaduni.',
+                                'description' => 'Zamani, wanawake walivaa nguo za magome ya miti (lubugo).',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Ngozi za wanyama',
+                                'description' => "Wanaume walivaa ngozi za wanyama, hasa ngozi ya ng'ombe, kama vazi la juu au la chini.",
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Vitenge au Khanga',
+                                'description' => 'Kwa sasa, wanawake wengi huvaa vitenge au khanga zenye mitindo ya Kihaya (mavazi ya heshima yenye kufunika mwili wote).',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Mapambo kama shanga, vikuku, hereni nk.',
+                                'description' => 'Mapambo yalijumuisha shanga, vikuku, hereni, na wakati mwingine mapambo ya shaba au chuma.',
                                 'media_keys' => [],
                             ],
                         ],
@@ -154,42 +213,59 @@ class TribeSeeder extends Seeder
                 // 3 Hehe
                  [
                     'name' => 'Hehe',
-                    'common_names' => ['Wahehe', 'Hehe'],
-                    'origin_region' => 'Mkoa wa Iringa',
-                    'famous_location' => 'Iringa na maeneo ya Nyanda za Juu za Kusini',
+                    'common_names' => ['Wahehe'],
+                    'origin_region' => 'Mkoa wa Iringa na baadhi ya maeneo ya Mkoa wa Njombe.  Makazi yao makuu ni katika Wilaya ya Iringa Vijijini, Kilolo, na Mufindi, kwenye nyanda za juu za kusini, zenye hali ya hewa ya baridi na ardhi yenye rutuba.',
+                    'famous_location' => ['Hifadhi ya Taifa ya Ruaha', 'Mto Ruaha na Daraja la Ruaha', 'Mlima Iringa (Iringa Hill)', 'Kalenga – Makao Makuu ya Chifu Mkwawa', 'Makumbusho ya Mkwawa', 'Ngome za Wahehe (Hehe Forts)', 'Maporomoko ya Maji ya Kihansi', 'Pango la Gangilonga', 'Vijiji vya Kitamaduni vya Wahehe'],
                     'country' => 'Tanzania',
-                    'summary' => 'Wahehe ni jamii ya wakulima na wapiganaji wa jadi wanaoishi katika Nyanda za Juu za Kusini mwa Tanzania.',
-                    'description' => 'Wanajulikana kwa historia yao ya kijeshi, ujasiri, na upinzani mkali dhidi ya ukoloni, hasa chini ya uongozi wa Chief Mkwawa.',
+                    'summary' => 'Wahehe ni mojawapo ya makabila mashuhuri ya Tanzania, yanayojulikana kwa historia yao ya ujasiri, mshikamano, na mchango mkubwa katika mapambano ya kupinga ukoloni. Katika blogpost hii, tutazungumzia kwa kina kuhusu kabila la Wahehe: asili yao, historia ya kivita chini ya uongozi wa Chifu Mkwawa, mila na tamaduni, chakula, mavazi ya asili, pamoja na mchango wao katika utambulisho na maendeleo ya taifa.',
+                    'description' => '',
                     'origins_and_history' => [
-                        'summary' => 'Asili ya Nyanda za Juu za Kusini',
-                        'description' => 'Wahehe waliunda dola yenye nguvu ya kijeshi katika karne ya 19 na kuwa jamii yenye mshikamano mkubwa.',
+                        'title' => 'Kuhusu wahehe na mila na tamaduni zao',
+                        'summary' => 'Katika historia ya Tanzania, kabila la Wahehe linachukua nafasi ya kipekee kutokana na ushujaa wao wa kupambana na ukoloni, hasa kupitia kiongozi wao maarufu Chief Mkwawa. Lakini zaidi ya ushindi wa kivita, Wahehe ni jamii iliyojaa mila, tamaduni, na utambulisho wa kipekee. Sasa,tutachunguza undani wa maisha yao ya kila siku, urithi wao wa kitamaduni, na mchango wao kwa taifa.',
+                        'subtitle' => 'Zifuatazo ni mila na desturi za wahehe.',
                         'items' => [
                             [
-                                'name' => 'Falme na mapambano',
-                                'description' => 'Chini ya uongozi wa Chief Mkwawa, Wahehe walipambana vikali dhidi ya wakoloni wa Kijerumani.',
+                                'name' => 'Mila na Desturi za wahehe',
+                                'description' => 'Mila na desturi ni sehemu muhimu ya kabila lolote nchini Tanzania. Sawasawa na kabila la wahehe lenye mila na tamaduni zao amabzo husaidia kuleta mifumo na utaratibu kwenye kabila',
+                                'subtitle' => 'Wahehe wana mila na tamaduni zifuatazo',
+                                'customs' => ['Wahehe ni jamii inayojivunia ushirikiano wa kijamaa, ambapo shughuli kama kilimo na ujenzi hufanywa kwa pamoja kupitia mfumo wa “mwikelo” (ushirikiano wa kijiji).', 'Ngoma za asili kama Mbeta na Mganda huchezwa wakati wa sherehe kama harusi, mavuno, au mapokezi ya wageni.', 'Wanajulikana kwa kutumia methali na misemo ya busara, ambayo huongoza jamii katika maisha ya kila siku.'],
+                                'beliefs' => ['Tambiko kwa mizimu ya mababu walizingatiwa sana kwa ajili ya mvua, ustawi wa jamii, na mazao.','Muundo wa kijeshi - Wahehe walikuwa na muundo wa kijeshi, ambapo usalama wa jamii ulipewa kipaumbele kikubwa. Mwaka 1891, waliongozwa na Chief Mkwawa kupambana na Wajerumani katika vita vya ushujaa vilivyoingia kwenye historia.', 'Ndoa zilihusisha mahari ya ng’ombe, na wasichana walifundwa maadili ya kuwa wake na mama wa familia bora.', 'Walikuwa na mfumo wa uongozi wa jadi wa machifu, na familia ziliheshimu sana wazee.'],
                                 'media_keys' => [],
                             ],
                         ],
                     ],
                     'food_and_cuisine' => [
-                        'summary' => 'Vyakula vya nafaka na mazao ya shambani',
-                        'description' => 'Lishe yao inategemea sana mahindi, mtama, na mazao ya mizizi.',
+                        'title' => 'Vyakula na vinywaji vya Kihehe',
+                        'summary' => 'Lishe ya wahehe inategemea sana mahindi, mtama, na mazao ya mizizi',
+                        'subtitle' => 'Vifuatavyo ni vyakula ambavyo wahehe.  wanapendelea kula.',
                         'items' => [
                             [
-                                'name' => 'Ugali wa mtama',
-                                'description' => 'Chakula kikuu kinacholiwa kwa mboga au nyama.',
+                                'name' => 'Ugali wa mahindi',
+                                'description' => 'Chakula kikuu ni ugali wa mahindi, unaoliwa na mboga kama matembele, kisamvu, majani ya kunde, au nyama.',
                                 'media_keys' => [],
                             ],
                             [
-                                'name' => 'Mboga za asili',
-                                'description' => 'Mboga za majani zinazolimwa au kukusanywa porini.',
+                                'name' => 'Viazi vitamu, Mihogo, na Maharage',
+                                'description' => 'Hivi ni vyakula vinavyopatikana kwa wingi kwenye milo yao.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Asali ya msituni',
+                                'description' => 'Katika baadhi ya maeneo, asali ya msituni hutumika kama kiambato cha lishe na tiba.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Pombe ya kienyeji',
+                                'description' => ' (kama ulanzi au komoni) huandaliwa kwa kutumia mahindi au mtama, hasa kwa hafla maalum kama harusi au mazishi.',
                                 'media_keys' => [],
                             ],
                         ],
                     ],
                     'music_and_dance' => [
+                        'title' => 'Ngoma na Michezo za Wahehe',
                         'summary' => 'Ngoma za kivita na sherehe',
-                        'description' => 'Ngoma hutumika kuhamasisha mashujaa na katika sherehe za kijamii.',
+                        'description' => 'Ngoma na muziki hutumika kuhamasisha mashujaa na katika sherehe na matukio za kijamii.',
+                        'subtitle' => 'Zifuatazo ni ngoma na michezo ya Kihehe.',
                         'items' => [
                             [
                                 'name' => 'Ngoma ya Wahehe',
@@ -199,12 +275,18 @@ class TribeSeeder extends Seeder
                         ],
                     ],
                     'dress_and_adornment' => [
-                        'summary' => 'Mavazi ya jadi na alama za kishujaa',
-                        'description' => 'Mavazi ya jadi yalisisitiza ujasiri, hadhi, na nafasi ya mtu katika jamii.',
+                        'title' => 'Mavazi ya asili ya wahehe',
+                        'summary' => 'Mavazi ya asili ya Wahehe yalikuwa rahisi lakini yenye kuakisi mazingira yao na maisha ya kijamii. Yalisisitiza ujasiri, hadhi, na nafasi ya mtu katika jamii.',
+                        'subtitle' => 'Yafuatayo ni mavazi ya kiasili ya kabila la wahhehe',
                         'items' => [
                             [
-                                'name' => 'Ngozi na mapambo ya asili',
-                                'description' => 'Yalitumiwa hasa na wapiganaji na viongozi wa jadi.',
+                                'name' => 'Mavazi ya ngozi',
+                                'description' => 'Wahehe walivaa mavazi ya ngozi (mashuka ya ngozi ya kondoo au ng’ombe), wakijifunga kiunoni na begani. Wakati wa vita au uwindaji, walivaa mavazi yaliyowawezesha kusonga kwa urahisi.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Vitambaa vya asili',
+                                'description' => 'Wanawake walivaa ngozi au vitambaa vya asili vilivyofungwa kiunoni na kifuani, mara nyingi vikiwa vimepambwa kwa umaridadi wa kiasili.',
                                 'media_keys' => [],
                             ],
                         ],
@@ -4674,6 +4756,434 @@ class TribeSeeder extends Seeder
                     'created_by' => $firstUserUuid,
                 ],
 
+                // 77. Kwere
+                [
+                    'name' => 'Kwere',
+                    'common_names' => ['Wakwere', 'Kwere'],
+                    'origin_region' => 'Mkoa wa Pwani',
+                    'famous_location' => 'Bagamoyo, Kibaha, Rufiji',
+                    'country' => 'Tanzania',
+                    'summary' => 'Wakwere ni jamii ya wakulima wanaoishi katika ukanda wa pwani ya Tanzania.',
+                    'description' => 'Maisha yao yanategemea kilimo cha muhogo, mpunga, mahindi na ufugaji mdogo, pamoja na mila na desturi za jadi.',
+                    'origins_and_history' => [
+                        'summary' => 'Makazi ya jadi ya pwani',
+                        'description' => 'Wakwere waliishi katika maeneo ya Pwani kama Bagamoyo na Rufiji, wakijenga maisha ya kijamii yaliyohusiana na mazingira ya pwani na mito.',
+                        'items' => [
+                            [
+                                'name' => 'Makazi na kilimo',
+                                'description' => 'Walijikita katika kilimo cha kujikimu na kuishi katika vijiji vya jadi.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya mizizi na nafaka',
+                        'description' => 'Lishe yao inajumuisha ugali wa mahindi, mihogo na wali unaoliwa na mboga za kienyeji.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali na mihogo',
+                                'description' => 'Vyakula vya msingi katika mlo wa kila siku.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Wali wa asili',
+                                'description' => 'Huliwa hasa katika maeneo yenye kilimo cha mpunga.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Ngoma za jadi',
+                        'description' => 'Ngoma na nyimbo hutumika katika sherehe, harusi na matukio ya kijamii.',
+                        'items' => [
+                            [
+                                'name' => 'Ngoma za Kwere',
+                                'description' => 'Ngoma za asili zinazoonyesha maisha na mshikamano wa jamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi na mapambo ya jadi',
+                        'description' => 'Hutumia vitambaa vya asili na mapambo rahisi katika sherehe.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na shanga',
+                                'description' => 'Huvaa katika sherehe na mikusanyiko ya kijamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+                // 78. Lambya
+                [
+                    'name' => 'Lambya',
+                    'common_names' => ['Walambya', 'Lambya'],
+                    'origin_region' => 'Mkoa wa Songwe',
+                    'famous_location' => 'Wilaya ya Ileje, Mpakani mwa Malawi na Zambia',
+                    'country' => 'Tanzania',
+                    'summary' => 'Walambya ni jamii ya wakulima wanaoishi kusini-magharibi mwa Tanzania.',
+                    'description' => 'Maisha yao yanategemea kilimo cha mahindi, mtama, mihogo na maharage, pamoja na ufugaji mdogo na mshikamano wa kijamii.',
+                    'origins_and_history' => [
+                        'summary' => 'Makazi ya jadi kusini-magharibi',
+                        'description' => 'Walambya waliunda makazi yao katika maeneo ya Ileje na kandokando ya mipaka ya Malawi na Zambia, wakihusiana kihistoria na jamii za jirani.',
+                        'items' => [
+                            [
+                                'name' => 'Uhamaji na makazi',
+                                'description' => 'Walihamia na kuishi katika maeneo yenye rutuba yanayofaa kwa kilimo.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya nafaka na mizizi',
+                        'description' => 'Lishe yao inajumuisha ugali wa mahindi au mtama unaoliwa na mboga na maharage.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali wa mahindi',
+                                'description' => 'Chakula kikuu cha kila siku katika familia nyingi.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Maharage na mboga',
+                                'description' => 'Huliwa kama kiambata cha ugali.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Ngoma na nyimbo za jadi',
+                        'description' => 'Ngoma hutumika katika sherehe, harusi na hafla za kijamii.',
+                        'items' => [
+                            [
+                                'name' => 'Ngoma za Lambya',
+                                'description' => 'Ngoma za asili zinazoimarisha mshikamano wa jamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi ya jadi',
+                        'description' => 'Hutumia vitambaa vya asili na mapambo katika sherehe maalum.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na shanga',
+                                'description' => 'Huvaa katika sherehe na mikusanyiko ya kijamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+                // 79. Lungu
+                [
+                    'name' => 'Lungu',
+                    'common_names' => ['Walungu', 'Lungu'],
+                    'origin_region' => 'Mkoa wa Rukwa',
+                    'famous_location' => 'Kandokando ya Ziwa Tanganyika (Nkasi)',
+                    'country' => 'Tanzania',
+                    'summary' => 'Walungu ni jamii ya wakulima na wavuvi wanaoishi magharibi mwa Tanzania.',
+                    'description' => 'Maisha yao yanategemea kilimo cha mahindi, mihogo na maharage, pamoja na uvuvi katika Ziwa Tanganyika na mila za jadi.',
+                    'origins_and_history' => [
+                        'summary' => 'Makazi ya jadi kandokando ya Ziwa Tanganyika',
+                        'description' => 'Walungu waliishi katika maeneo ya Nkasi na pwani ya Ziwa Tanganyika, wakitegemea rasilimali za ziwa na ardhi kwa maisha yao.',
+                        'items' => [
+                            [
+                                'name' => 'Kilimo na uvuvi',
+                                'description' => 'Walichanganya kilimo cha chakula na uvuvi kama shughuli kuu za kiuchumi.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya nafaka na samaki',
+                        'description' => 'Lishe yao inajumuisha ugali wa mahindi na samaki waliovuliwa Ziwa Tanganyika.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali na samaki',
+                                'description' => 'Chakula kikuu cha kila siku katika familia nyingi.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Mihogo',
+                                'description' => 'Huliwa kama chakula cha ziada.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Ngoma za jadi',
+                        'description' => 'Ngoma na nyimbo hutumika katika sherehe za kijamii na matambiko.',
+                        'items' => [
+                            [
+                                'name' => 'Ngoma za Lungu',
+                                'description' => 'Ngoma za asili zinazoonyesha maisha ya uvuvi na kilimo.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi ya jadi',
+                        'description' => 'Hutumia vitambaa vya asili na mapambo rahisi katika sherehe.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na mapambo',
+                                'description' => 'Huvaa katika sherehe na mikusanyiko ya kijamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+                // 80. Luo
+                [
+                    'name' => 'Luo',
+                    'common_names' => ['Waluo', 'Luo'],
+                    'origin_region' => 'Mkoa wa Mara',
+                    'famous_location' => 'Musoma, kandokando ya Ziwa Victoria',
+                    'country' => 'Tanzania',
+                    'summary' => 'Waluo ni jamii ya wafugaji na wakulima wanaoishi kaskazini mwa Tanzania.',
+                    'description' => 'Wanajulikana kwa ufugaji wa ng’ombe, kilimo cha mahindi na mtama, pamoja na uvuvi katika Ziwa Victoria na mila thabiti za kijamii.',
+                    'origins_and_history' => [
+                        'summary' => 'Asili ya Kiniloti',
+                        'description' => 'Waluo wana asili ya Kiniloti, wakihamia kusini hadi maeneo ya Ziwa Victoria ambako waliunda makazi ya kudumu.',
+                        'items' => [
+                            [
+                                'name' => 'Uhamaji wa kihistoria',
+                                'description' => 'Walihamia kutoka kaskazini kuelekea Ziwa Victoria kwa ajili ya malisho na maji.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya mifugo na samaki',
+                        'description' => 'Lishe yao inahusisha ugali, maziwa, nyama na samaki kutoka Ziwa Victoria.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali na samaki',
+                                'description' => 'Mlo wa kawaida katika kaya nyingi.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Maziwa na nyama',
+                                'description' => 'Sehemu muhimu ya lishe ya jamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Nyimbo na ngoma za jadi',
+                        'description' => 'Nyimbo hutumika katika sherehe, matambiko na kusimulia historia.',
+                        'items' => [
+                            [
+                                'name' => 'Nyimbo za Luo',
+                                'description' => 'Nyimbo za asili zinazoambatana na ala rahisi za muziki.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi ya jadi',
+                        'description' => 'Mavazi hujumuisha vitambaa, ngozi na mapambo ya jadi.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na mapambo ya asili',
+                                'description' => 'Huvaa katika sherehe na hafla muhimu.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+                // 81. Machinga
+                [
+                    'name' => 'Machinga',
+                    'common_names' => ['Wamachinga', 'Machinga'],
+                    'origin_region' => 'Mkoa wa Mtwara na Lindi',
+                    'famous_location' => 'Newala, Masasi',
+                    'country' => 'Tanzania',
+                    'summary' => 'Wamachinga ni jamii ya wakulima wanaoishi kusini mwa Tanzania.',
+                    'description' => 'Wanajulikana kwa kilimo cha mihogo, mahindi na ufundi wa jadi, pamoja na mila na desturi zilizoathiriwa na jamii za Wamakonde na Wayao.',
+                    'origins_and_history' => [
+                        'summary' => 'Makazi ya jadi kusini mwa Tanzania',
+                        'description' => 'Wamachinga waliunda makazi yao katika maeneo ya Mtwara na Lindi, wakihusiana kihistoria na makundi ya Wayao na Wamakonde.',
+                        'items' => [
+                            [
+                                'name' => 'Uhamaji na makazi',
+                                'description' => 'Walihamia na kuishi katika maeneo yenye rutuba yanayofaa kwa kilimo cha mizizi na nafaka.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya mihogo na nafaka',
+                        'description' => 'Lishe yao inajumuisha ugali wa mahindi, mihogo na mboga za kienyeji.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali wa mihogo',
+                                'description' => 'Chakula kikuu kinachotokana na mihogo.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Mboga za kienyeji',
+                                'description' => 'Huliwa pamoja na ugali katika mlo wa kila siku.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Ngoma za jadi',
+                        'description' => 'Ngoma hutumika katika sherehe, harusi na matambiko ya kijamii.',
+                        'items' => [
+                            [
+                                'name' => 'Ngoma za Machinga',
+                                'description' => 'Ngoma za asili zinazoonyesha historia na mshikamano wa jamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi ya jadi',
+                        'description' => 'Hutumia vitambaa vya asili na mapambo rahisi katika sherehe.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na mapambo',
+                                'description' => 'Huvaa katika sherehe na mikusanyiko ya kijamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+                // 82. Magoma
+                [
+                    'name' => 'Magoma',
+                    'common_names' => ['Wamagoma', 'Magoma'],
+                    'origin_region' => 'Mkoa wa Tanga',
+                    'famous_location' => 'Handeni, Korogwe',
+                    'country' => 'Tanzania',
+                    'summary' => 'Wamagoma ni jamii ya wakulima wanaoishi kaskazini-mashariki mwa Tanzania.',
+                    'description' => 'Maisha yao yanategemea kilimo cha mahindi, mihogo, mtama na mazao mengine ya chakula, pamoja na mila na desturi za jadi.',
+                    'origins_and_history' => [
+                        'summary' => 'Makazi ya jadi kaskazini-mashariki',
+                        'description' => 'Wamagoma waliishi katika maeneo ya Handeni na Korogwe, wakijenga maisha ya kijamii yanayohusiana na kilimo na mazingira ya nyanda za chini.',
+                        'items' => [
+                            [
+                                'name' => 'Kilimo na makazi',
+                                'description' => 'Walijikita katika kilimo cha kujikimu na kuishi katika vijiji vya jadi.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya nafaka na mizizi',
+                        'description' => 'Lishe yao inajumuisha ugali wa mahindi au mtama unaoliwa na mboga za kienyeji.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali wa mahindi',
+                                'description' => 'Chakula kikuu cha kila siku katika familia nyingi.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Mihogo',
+                                'description' => 'Huliwa kama chakula cha ziada.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Ngoma za jadi',
+                        'description' => 'Ngoma na nyimbo hutumika katika sherehe, harusi na hafla za kijamii.',
+                        'items' => [
+                            [
+                                'name' => 'Ngoma za Magoma',
+                                'description' => 'Ngoma za asili zinazoonyesha mshikamano wa jamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi ya jadi',
+                        'description' => 'Hutumia vitambaa vya asili na mapambo rahisi katika sherehe.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na shanga',
+                                'description' => 'Huvaa katika sherehe na mikusanyiko ya kijamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+                // 83. Mahanji
+                [
+                    'name' => 'Mahanji',
+                    'common_names' => ['Wamahanji', 'Mahanji'],
+                    'origin_region' => 'Mkoa wa Lindi',
+                    'famous_location' => 'Liwale, Nachingwea',
+                    'country' => 'Tanzania',
+                    'summary' => 'Wamahanji ni jamii ya wakulima wanaoishi kusini mwa Tanzania.',
+                    'description' => 'Wanajulikana kwa kilimo cha mihogo, mpunga na mahindi, pamoja na maisha ya kijiji na mila za jadi.',
+                    'origins_and_history' => [
+                        'summary' => 'Makazi ya jadi kusini mwa Tanzania',
+                        'description' => 'Wamahanji waliishi katika maeneo ya Liwale na Nachingwea, wakitegemea kilimo kama msingi wa uchumi na utamaduni wao.',
+                        'items' => [
+                            [
+                                'name' => 'Kilimo cha mihogo',
+                                'description' => 'Kilimo cha mihogo kilikuwa shughuli kuu ya kiuchumi.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'food_and_cuisine' => [
+                        'summary' => 'Vyakula vya mihogo na mpunga',
+                        'description' => 'Lishe yao inajumuisha ugali wa mihogo, wali na mboga za kienyeji.',
+                        'items' => [
+                            [
+                                'name' => 'Ugali wa mihogo',
+                                'description' => 'Chakula kikuu cha kila siku.',
+                                'media_keys' => [],
+                            ],
+                            [
+                                'name' => 'Wali wa asili',
+                                'description' => 'Huliwa hasa katika maeneo yenye kilimo cha mpunga.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'music_and_dance' => [
+                        'summary' => 'Ngoma za jadi',
+                        'description' => 'Ngoma na nyimbo hutumika katika sherehe, harusi na matambiko.',
+                        'items' => [
+                            [
+                                'name' => 'Ngoma za Mahanji',
+                                'description' => 'Ngoma za asili zinazoonyesha maisha ya kilimo.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'dress_and_adornment' => [
+                        'summary' => 'Mavazi ya jadi',
+                        'description' => 'Hutumia vitambaa vya asili na mapambo rahisi katika sherehe.',
+                        'items' => [
+                            [
+                                'name' => 'Vitambaa na shanga',
+                                'description' => 'Huvaa katika sherehe na hafla za kijamii.',
+                                'media_keys' => [],
+                            ],
+                        ],
+                    ],
+                    'created_by' => $firstUserUuid,
+                ],
+
+
             ];
 
             foreach ($tribes as $tribe) {
@@ -4742,15 +5252,15 @@ class TribeSeeder extends Seeder
                 // 'Kutu',
                 // "Kw'adza",
                 // 'Kwaya',
-                'Kwere',
-                'Lambya',
+                // 'Kwere',
+                // 'Lambya',
                 //'Luguru',
-                'Lungu',
-                'Luo',
+                // 'Lungu',
+                // 'Luo',
                 //'Maasai',
-                'Machinga',
-                'Magoma',
-                'Mahanji',
+                // 'Machinga',
+                // 'Magoma',
+                // 'Mahanji',
                 //'Makonde',
                 // 'Makua',
                 'Makwe',
